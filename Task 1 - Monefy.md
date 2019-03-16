@@ -1,3 +1,5 @@
+# Monefy - Test Plan
+
 # Functional Tests
 ## Features to be tested
 
