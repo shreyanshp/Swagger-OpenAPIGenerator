@@ -136,6 +136,13 @@ Response COde 500
 
 ## BestBuy API Test Docs
 [RestAssured Tests](repo/blob/master/docs)
+
+## Testing API's using Swagger Spec
+Since Swagger Spec, was specified, we used that Spec (converted to YAML) and used [OPENAPI Generator](https://openapi-generator.tech) which helps in generating generic test cases and (even stubs) based on Swagger Spec
+
+Command Used - 
+> java -jar openapi-generator-cli-3.3.4.jar generate -i bby.yaml -g java --library rest-assured -o Task3-API-Test/ 
+
 ## Requirements
 
 Building the API client library requires [Maven](https://maven.apache.org/) to be installed.
@@ -152,6 +159,12 @@ To deploy it to a remote Maven repository instead, configure the settings of the
 
 ```shell
 mvn deploy
+```
+
+To run all the tests:
+
+```shell
+mvn clean test
 ```
 
 Refer to the [official documentation](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) for more information.
