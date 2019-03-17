@@ -9,7 +9,7 @@ Response Code 200
 - Check whether the query response has a statusCode - 200
 Response Code 401 (We can skip this as there is no authorization required for any of the API's)
 Response Code 404 (We can skip this, as our API endpoints are correctly defined)
-Response COde 500
+Response Code 500
 - Check whether the query response has a statusCode - 500
 Example -
 > {
@@ -107,7 +107,7 @@ Example -
 
 Response Code 401 (We can skip this as there is no authorization required for any of the API's)
 Response Code 404 (We can skip this, as our API endpoints are correctly defined)
-Response COde 500
+Response Code 500
 - Check whether the query response has a statusCode - 500
 > {
     "name": "GeneralError",
@@ -133,15 +133,18 @@ Response COde 500
 
 
 
-
 ## BestBuy API Test Docs
-[RestAssured Tests](repo/blob/master/docs)
+[RestAssured Tests](docs)
 
 ## Testing API's using Swagger Spec
-Since Swagger Spec, was specified, we used that Spec (converted to YAML) and used [OPENAPI Generator](https://openapi-generator.tech) which helps in generating generic test cases and (even stubs) based on Swagger Spec
+Since Swagger Spec, was specified, we used that Spec (converted to YAML) and used [OpenApi Generator](https://openapi-generator.tech) which helps in generating generic test cases and (even stubs) based on Swagger Spec
 
 Command Used - 
 > java -jar openapi-generator-cli-3.3.4.jar generate -i bby.yaml -g java --library rest-assured -o Task3-API-Test/ 
+
+Files Used (present in same repo) -
+[BestBuy Swagger YAML](bby.yaml)
+[OpenApi Generator CLI](openapi-generator-cli-3.3.4.jar)
 
 ## Requirements
 
@@ -190,5 +193,7 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 ## Author
 
 shreyanshpandey08@gmail.com
+
+## PS - Due to lack of time, I don't blame anyone, as I had a production issue in my current paying job,  I could not create those assertion in the functions 
 
 
