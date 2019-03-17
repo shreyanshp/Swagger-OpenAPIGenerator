@@ -3,7 +3,7 @@
 ## Test Cases -
 From functional tests perspective
 
-For GET API's
+### For GET API's
 
 Response Code 200
 - Check whether the query response has a statusCode - 200
@@ -21,7 +21,7 @@ Example -
      "errors": {}
    }
 
-FOR POST API's
+### FOR POST API's
 Response Code 200/201
 - Check whether the query response has a statusCode - 200/201
 Example -
