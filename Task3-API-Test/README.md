@@ -12,7 +12,8 @@ Response Code 404 (We can skip this, as our API endpoints are correctly defined)
 Response Code 500
 - Check whether the query response has a statusCode - 500
 Example -
-> {
+``` 
+   {
      "name": "GeneralError",
      "message": "SQLITE_ERROR: no such column: NaN",
      "code": 500,
@@ -20,12 +21,13 @@ Example -
      "data": {},
      "errors": {}
    }
-
+```
 ### FOR POST API's
 Response Code 200/201
 - Check whether the query response has a statusCode - 200/201
 Example -
-> Response Body
+```
+Response Body
   {
     "name": "shreyansh",
     "id": "87",
@@ -46,8 +48,10 @@ Example -
     "connection": "keep-alive",
     "content-length": "108"
   }
+```
 Response Code 400
-> Response Body
+```
+Response Body
   {
     "name": "BadRequest",
     "message": "Validation error",
@@ -76,10 +80,11 @@ Response Code 400
     "connection": "keep-alive",
     "content-length": "181"
   }
-
+```
 One more 400
 Example -
-> Response Body
+```
+Response Body
   {
     "name": "BadRequest",
     "message": "Invalid Parameters",
@@ -104,12 +109,13 @@ Example -
     "connection": "keep-alive",
     "content-length": "149"
   }
-
+```
 Response Code 401 (We can skip this as there is no authorization required for any of the API's)
 Response Code 404 (We can skip this, as our API endpoints are correctly defined)
 Response Code 500
 - Check whether the query response has a statusCode - 500
-> {
+```
+  {
     "name": "GeneralError",
     "message": "Unexpected token } in JSON at position 22",
     "code": 500,
@@ -130,7 +136,7 @@ Response Code 500
     "connection": "keep-alive",
     "content-length": "138"
   }
-
+```
 
 
 ## BestBuy API Test Docs
@@ -140,7 +146,9 @@ Response Code 500
 Since Swagger Spec, was specified, we used that Spec (converted to YAML) and used [OpenApi Generator](https://openapi-generator.tech) which helps in generating generic test cases and (even stubs) based on Swagger Spec
 
 Command Used - 
-> java -jar openapi-generator-cli-3.3.4.jar generate -i bby.yaml -g java --library rest-assured -o Task3-API-Test/ 
+``` 
+java -jar openapi-generator-cli-3.3.4.jar generate -i bby.yaml -g java --library rest-assured -o Task3-API-Test/ 
+```
 
 Files Used (present in same repo) -
 [BestBuy Swagger YAML](bby.yaml)
