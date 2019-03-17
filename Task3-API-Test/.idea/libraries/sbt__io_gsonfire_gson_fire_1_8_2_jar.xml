@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: io.gsonfire:gson-fire:1.8.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.gsonfire/gson-fire/jars/gson-fire-1.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.gsonfire/gson-fire/srcs/gson-fire-1.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
